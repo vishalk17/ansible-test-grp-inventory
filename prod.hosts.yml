@@ -5,3 +5,4 @@ all:
       roles:
         - nginx
         - fail2ban
+        - docker

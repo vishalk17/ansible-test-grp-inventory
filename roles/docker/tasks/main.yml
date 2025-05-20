@@ -1,0 +1,17 @@
+---
+- name: Print docker role is running
+  debug:
+    msg: "docker role applied successfully!"
+
+- name: Install Docker using Ubuntu package
+  apt:
+    name: docker.io
+    state: present
+    update_cache: yes
+
+- name: Ensure docker service is started and enabled
+  systemd:
+    name: docker
+    state: started
+    enabled: yes
+
