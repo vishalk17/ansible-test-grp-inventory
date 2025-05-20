@@ -1,0 +1,4 @@
+---
+- name: Print that fail2ban role is running
+  debug:
+    msg: "fail2ban role applied!"

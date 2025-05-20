@@ -1,0 +1,7 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: Just print a message
+      debug:
+        msg: "This playbook has no roles section"

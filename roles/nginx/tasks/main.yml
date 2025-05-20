@@ -1,0 +1,4 @@
+---
+- name: Print that nginx role is running
+  debug:
+    msg: "nginx role applied!"
