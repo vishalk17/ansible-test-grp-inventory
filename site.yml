@@ -2,3 +2,8 @@
 - name: Just exercises configured roles for basic provisioning
   hosts: all
   become: yes
+
+  roles:
+    - nginx
+    - fail2ban
+    - docker

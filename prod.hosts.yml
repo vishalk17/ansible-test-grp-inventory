@@ -2,7 +2,3 @@ all:
   hosts:
     localhost:
       ansible_connection: local
-      roles:
-        - nginx
-        - fail2ban
-        - docker
